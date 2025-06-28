@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creative Studio - Landing Page</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: #000;
+    }
+  </style>
+</head>
+<body>
+  <div class="page-wrapper">
+    <header>
+      <div class="container nav">
+        <h1 class="logo">Creative Studio - Landing Page</h1>
+        <nav class="navbar">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="container">
+          <h2>Your Vision, Our Creation</h2>
+          <a href="#contact" class="btn">Get Started</a>
+        </div>
+      </section>
+
+      <section class="content" id="about">
+        <div class="container">
+          <h2>About Us</h2>
+          <p>We are a team of passionate developers and designers, dedicated to creating visually stunning and technically sound web experiences. We believe in clean code, responsive design, and user-centric interfaces.</p>
+          <h3>What We Offer</h3>
+          <p>Our services include web design, web development, and SEO optimization. We use the latest technologies and best practices to ensure your website is not only beautiful but also functional and accessible.</p>
+          <h3>Our Values</h3>
+          <p>At Creative Studio, we value innovation, quality, and customer satisfaction. We strive to exceed expectations and deliver results that make a difference.</p>
+          <h3>Key Features</h3>
+          <ul>
+            <li>💡 Innovative Designs</li>
+            <li>⚙️ Modern Technologies</li>
+            <li>🌐 Web Accessibility</li>
+            <li>📱 Responsive Layouts</li>
+            <li>📊 Analytics Integration</li>
+            <li>🔒 Security Best Practices</li>
+            <li>📈 Performance Optimization</li>
+            <li>🤝 Client Collaboration</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="content" id="services">
+        <div class="container">
+          <h2>Our Services</h2>
+          <div class="cards">
+            <div class="card">
+              <h3>🎨 Web Design</h3>
+              <p>Visually engaging websites tailored to your brand.</p>
+            </div>
+            <div class="card">
+              <h3>💻 Web Development</h3>
+              <p>Fast, scalable, and responsive websites using modern technologies.</p>
+            </div>
+            <div class="card">
+              <h3>📱 Mobile Optimization</h3>
+              <p>Ensuring your website looks great on all devices.</p>
+            </div>
+            <div class="card">
+              <h3>🔒 Security</h3>
+              <p>Implementing best practices to keep your site secure.</p>
+            </div>
+            <div class="card">
+              <h3>📊 Analytics</h3>
+              <p>Integrating analytics to track your website's performance.</p>
+            </div>
+            <div class="card">
+              <h3>📈 SEO Optimization</h3>
+              <p>Improve your online visibility and reach a wider audience.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content" id="contact">
+        <div class="container">
+          <h2>Contact Us</h2>
+          <form action="#" method="post" class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <input type="text" placeholder="Subject" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <div class="checkbox-group">
+              <label>
+                <input type="checkbox" name="terms" value="agree" required> I agree to the terms and conditions
+              </label>
+            </div>
+            <div class="radio-group">
+              <label>
+                <input type="radio" name="contact-method" value="email" checked> Email
+              </label>
+              <label>
+                <input type="radio" name="contact-method" value="phone"> Phone
+              </label>
+              
+            </div>
+            <div class="select-group">
+              <label for="service">Select a Service:</label>
+              <select id="service" name="service">
+                <option value="web-design">Web Design</option>
+                <option value="web-development">Web Development</option>
+                <option value="seo-optimization">SEO Optimization</option>
+                <option value="mobile-optimization">Mobile Optimization</option>
+                <option value="content-creation">Content Creation</option>
+                <option value="branding">Branding</option>
+                <option value="security">Security</option>
+                <option value="analytics">Analytics</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="file-upload">
+              <label for="file">Upload a File:</label>
+              <input type="file" id="file" name="file">
+            </div>
+            <div class="range-slider">
+              <label for="budget">Budget:</label>
+              <input type="range" id="budget" name="budget" min="1000" max="10000" step="500" value="5000">
+              <span id="budget-value">$5000</span>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; Lokesh 2025 Creative Studio. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
